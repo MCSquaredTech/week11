@@ -1,0 +1,44 @@
+
+body { 
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+
+    width: 330px;
+    overflow: hidden;
+    margin: 50x auto 0 auto;
+}
+
+.header-text { 
+    display: block;
+     
+    margin: 10px, auto, 40px, auto;
+
+    font-weight: 500;
+    font-size: 21px; 
+    text-align: center;
+}
+
+.play-space { 
+    padding: 40px; 
+    margin: 20px;
+    align-items: center;
+}
+
+.box { 
+    float: left;
+    width: 125px;
+    height: 125px;
+    border: 1px solid black;
+    transition: all .25sc ease-in-out;
+    font-size: 85px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.box:hover { 
+    background: cornflowerblue;
+    color: rgb(108, 109, 110)
+}
+
