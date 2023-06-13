@@ -19,6 +19,7 @@ body {
 .play-space { 
     padding: 5px; 
     margin: 5px;
+    text-align: center;
     align-items: center;
 }
 
@@ -64,15 +65,14 @@ body {
 }
 
 .card { 
-    height: 85%;
     width: 70%;
     align-items: center;
 }
 .card-background { 
-    background-color: rgb(0, 0, 180) ;
+    background-color: rgb(22, 22, 179) ;
 }
 
 .card-background:hover { 
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(22, 98, 239);
     box-shadow: 5px 5px 5px 0 rgb(0, 0, 170);   
 }
