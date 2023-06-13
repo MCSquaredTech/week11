@@ -20,9 +20,17 @@ body {
 }
 
 .play-space { 
-    padding: 40px; 
-    margin: 20px;
+    padding: 10px; 
+    margin: 10px;
     align-items: center;
+}
+
+.hide { 
+    visibility: collapse;
+}
+
+.show { 
+    visibility: visible;
 }
 
 .box { 
@@ -42,3 +50,12 @@ body {
     color: rgb(108, 109, 110)
 }
 
+.card-background { 
+    background-color: rgb(0, 0, 180) ;
+}
+
+.card-background:hover { 
+    background-color: rgb(0, 0, 255);
+    box-shadow: 5px 5px 5px 0 rgb(0, 0, 170);
+    
+}
