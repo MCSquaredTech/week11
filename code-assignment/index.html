@@ -15,39 +15,45 @@
         <div class="row">
             <!-- Header Players and Score Card -->
             <div class="col-sm-3 header-text">
-                Player 1 Card
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top card-background" src="./imgs/man.png" alt="player 1's avatar">
+                <h3 id="p1-name" class="play-space">Player 1</h3>
+                <div class="card">
+                    <img class="card-img-top card-background" src="./imgs/man.png" alt="player 1's avatar" id="p1">
                     <div class="card-body">
-                        <h5 class="card-title">Player 1</h5>
+                        <h5 class="card-title" id="p1-title">Player 1</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Change Name</a>
+                        <a id="p1-btn" class="btn btn-primary">Change Name</a>
                     </div>
-                    <div class="form-group  hide">
-                        <input type="text" id="first-name" class="form-control" placeholder="First Name">
+                    <div class="form-group  hide" id="p1-input">
+                        <input type="text" id="p1-first-name" class="form-control" placeholder="First Name">
+                        <input type="radio" class="form-check-inpuut" name="sex1" id="p1-maleRadio">
+                        <label class="form-check-label" for="maleRadio">male</label>
+                        <input type="radio" class="form-check-inpuut" name="sex1" id="p1-femaleRadio">
+                        <label class="form-check-label" for="femaleRadio">female</label>
+                        <button class="btn btn-primary form-control" id="p1-save">save</button>
                     </div>
                 </div>
                 
             </div>
             
             <div class="col-sm-6 header-text">
-                Score Board Card
+                <h2>Score Board Card</h2>
             </div>
             <div class="col-sm-3 header-text">
-                Player 2 Card
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top card-background" src="./imgs/woman.png" alt="player 1's avatar">
+                <h3 id="p2-name">Player 2 Card</h3>
+                <div class="card">
+                    <img class="card-img-top card-background" src="./imgs/woman.png" alt="player 2's avatar" id="p2">
                     <div class="card-body">
-                      <h5 class="card-title">Player 2</h5>
+                      <h5 class="card-title" id="p2-title">Player 2</h5>
                       <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">Change Name</a>
+                      <a id="p2-btn" class="btn btn-primary">Change Name</a>
                     </div>
-                    <div class="form-group  hide">
-                        <input type="text" id="first-name" class="form-control" placeholder="First Name">
-                        <input type="radio" class="form-check-inpuut" name="maleRadio" id="maleRadio">
+                    <div class="form-group  hide" id="p2-input">
+                        <input type="text" id="p2-first-name" class="form-control" placeholder="First Name">
+                        <input type="radio" class="form-check-inpuut" name="sex2" id="p2-maleRadio" >
                         <label class="form-check-label" for="maleRadio">male</label>
-                        <input type="radio" class="form-check-inpuut" name="femaleRadio" id="femaleRadio">
+                        <input type="radio" class="form-check-inpuut" name="sex2" id="p2-femaleRadio">
                         <label class="form-check-label" for="femaleRadio">female</label>
+                        <button class="btn btn-primary form-control" id="p2-save">save</button>
                     </div>
                     
                   </div>
@@ -55,27 +61,26 @@
             </div>
         </div>
         <div class="row play-space">
-            <div class="col-sm-3"></div>
-                <div class="col-sm-6 align-self-center">
-                    <div class="row justify-content-center">
-                        <div class="box1 col-sm-4 box box-left box-top"></div>
-                        <div class="box2 col-sm-4 box box-top"></div>
-                        <div class="box3 col-sm-4 box box-right box-top"></div>
-                    </div>
+            <div class="col-sm-12 align-self-center">
+                <div class="row justify-content-center">
+                    <div class="box box-left box-top"></div>
+                    <div class="box box-top"></div>
+                    <div class="box box-right box-top"></div>
+                </div>
 
-                    <div class="row justify-content-center">
-                        <div class="box4 col-sm-4 box box-left"></div>
-                        <div class="box5 col-sm-4 box box-mid"></div>
-                        <div class="box6 col-sm-4 box box-right"></div>
-                    </div>
+                <div class="row justify-content-center">
+                    <div class="box box-left"></div>
+                    <div class="box"></div>
+                    <div class="box box-right"></div>
+                </div>
 
-                    <div class="row justify-content-center">
-                        <div class="box7 col-sm-4 box box-left box-bottom"></div>
-                        <div class="box8 col-sm-4 box box-bottom"></div>
-                        <div class="box9 col-sm-4 box box-right box-bottom"></div>
-                    </div>
+                <div class="row justify-content-center">
+                    <div class="box box-left box-bottom"></div>
+                    <div class="box box-bottom"></div>
+                    <div class="box box-right box-bottom"></div>
+                </div>
             </div>
-    </div>
+        </div>
     
 </body>
 <script src="app.js" type="module"></script>

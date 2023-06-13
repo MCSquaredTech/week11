@@ -3,16 +3,13 @@ body {
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;  
     font-weight: 400;
     font-size: 14px;
-
-    width: 330px;
-    overflow: hidden;
-    margin: 50x auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .header-text { 
     display: block;
      
-    margin: 10px, auto, 40px, auto;
+    margin: 10px, auto, 10px, auto;
 
     font-weight: 500;
     font-size: 21px; 
@@ -20,8 +17,8 @@ body {
 }
 
 .play-space { 
-    padding: 10px; 
-    margin: 10px;
+    padding: 5px; 
+    margin: 5px;
     align-items: center;
 }
 
@@ -35,27 +32,47 @@ body {
 
 .box { 
     float: left;
-    width: 125px;
-    height: 125px;
-    border: 1px solid black;
-    transition: all .25sc ease-in-out;
-    font-size: 85px;
+    width: 100px;
+    height: 100px;
+    
+    transition: all .45sc ease-in-out;
+    font-size: 80%;
     text-align: center;
-    line-height: 100px;
+
     cursor: pointer;
+}
+
+.box-left {
+    border-right: 2px solid black;
+}
+
+.box-top {
+    border-bottom: 2px solid black;
+}
+
+.box-right { 
+    border-left: 2px solid black;
+}
+
+.box-bottom { 
+    border-top: 2px solid black;
 }
 
 .box:hover { 
     background: cornflowerblue;
-    color: rgb(108, 109, 110)
+
 }
 
+.card { 
+    height: 85%;
+    width: 70%;
+    align-items: center;
+}
 .card-background { 
     background-color: rgb(0, 0, 180) ;
 }
 
 .card-background:hover { 
     background-color: rgb(0, 0, 255);
-    box-shadow: 5px 5px 5px 0 rgb(0, 0, 170);
-    
+    box-shadow: 5px 5px 5px 0 rgb(0, 0, 170);   
 }
