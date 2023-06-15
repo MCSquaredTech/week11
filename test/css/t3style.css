@@ -8,13 +8,12 @@ body {
 
 .header-text { 
     display: block;
-    float: left; 
+     
     margin: 10px, auto, 10px, auto;
 
     font-weight: 500;
     font-size: 21px; 
     text-align: center;
-    align-items: center;
 }
 
 .play-space { 
@@ -38,7 +37,7 @@ body {
     height: 100px;
     
     transition: all .45sc ease-in-out;
-    font-size: 80px;
+    font-size: 80%;
     text-align: center;
 
     cursor: pointer;
@@ -76,9 +75,4 @@ body {
 .card-background:hover { 
     background-color: rgb(22, 98, 239);
     box-shadow: 5px 5px 5px 0 rgb(0, 0, 170);   
-}
-
-.sb-title { 
-    font-size: 2em; 
-    font-weight: 500;
 }

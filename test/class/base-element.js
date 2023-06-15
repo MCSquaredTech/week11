@@ -4,6 +4,7 @@ export class BaseElement {
     }
 
     appendToElement(el) { 
+        this.clear(el);
         this.createElement(); 
         el.append(this.element); 
     }
@@ -15,5 +16,11 @@ export class BaseElement {
 
     getElementString() { 
         throw 'Please override getElementString() in BaseElement';
+    }
+
+    clear(el) { 
+        while(el.firstChild) { 
+            el.removeChild(el.firstChild);
+        }
     }
 }

@@ -16,5 +16,11 @@ p2.display();
 p2.change();
 p2.save();
 
-
-
+const tiles = Array.from($('.box'));
+tiles.forEach( (tile, index) => { 
+    tile.addEventListener('click', () => tileClicked(tile, index));
+});
+ 
+let tileClicked = (tile, index) => { 
+    tile.innerText = 'X';
+}

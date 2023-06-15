@@ -42,9 +42,7 @@ export class Player {
         $(`#${this.id}-pSave`).on('click', (e) => {
             e.preventDefault();
             this.gender =  $(`#${this.id}-pmaleRadio`).is(":checked") ? 'male' : 'female';
-            console.log(this.id,this.gender);
             this.name = $(`#${this.id}-pFirstName`).val();
-            console.log(this.name);
 
             playerInput.removeClass('show');
             playerInput.addClass('hide')
