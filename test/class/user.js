@@ -1,56 +1,27 @@
 
 "use strict";
 
-export class User { 
-    constructor(name, sex, age, text, element){ 
-        this._name = name; 
-        this._sex = sex; 
-        this._age = age; 
-        this._text = text; 
-        this.e = document.getElementById(element);
+import { BaseElement } from "./base-element.js";
+
+export class User extends BaseElement { 
+    constructor(name, gender, player){ 
+        super();
+        this.name = name;
+        this.gender = gender;
+        this.player = player;
     }
 
-    get name() { 
-        return this._name; 
-    }
-    set name(value) {
-        this._name = value
-    }
-
-    get sex() { 
-        return this._sex; 
-    }
-    set sex(value) {
-        this._sex = value;
-    }
-
-    get age() { 
-        return this._age;
-    }
-    set age(value) { 
-        this._age = value
-    }
-
-    get text() { 
-        return this._text;
-    }
-
-    set text(value) { 
-        this._text = value;
-    }
-
-    display(element) { 
-        console.log(this.e);
-
-        let newRow = document.createElement('div');
-        newRow.innerHTML = `
-            <div>${this.name} 
-                <p>Current age ${this.age}</p> 
-                <p>${this.text}</p
+    getElementString() { 
+       return  `
+        <div class="card" style="width: 18rem;">
+            <h3>${this.player}</h3>
+            <img class="card-img-top" src="${this.gender}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${this.name}</h5>
+                <p class="card-text"></p>
+                <div class="crd-btn"></div>
+                <a href="#" class="btn btn-primary">Change</a>
             </div>
-        `
-        this.e.appendChild(newRow);
+        </div> `
     }
-
-
 }
