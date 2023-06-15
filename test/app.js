@@ -2,11 +2,14 @@ import { User } from './class/user.js';
 
 let Jacob = new User('Jacob', 'male', 24, 'This is Jacob');
 let Sally = new User('Sally', 'female', 25, 'Please welcome Sally');
+Jacob.display('p1');
+Sally.display('p2');
 
 console.log(Jacob.text);
 console.log(Sally.text);
 
-Sally.text('Hi this is Sally, please to meet you'); 
+Sally.text='Hi this is Sally, please to meet you'; 
 
 console.log(Jacob.text);
 console.log(Sally.text);
+console.log(Jacob.text);
