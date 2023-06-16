@@ -17,10 +17,20 @@ p2.change();
 p2.save();
 
 const tiles = Array.from($('.box'));
+
+let p = p1;
+
+// let tileValidate(tile) { 
+
+// }
+
 tiles.forEach( (tile, index) => { 
-    tile.addEventListener('click', () => tileClicked(tile, index));
+    tile.addEventListener('click', () => action(tile, index));
 });
  
-let tileClicked = (tile, index) => { 
-    tile.innerText = 'X';
+let action = (tile, index) => { 
+    // tileValidate(index);
+    tile.innerText = p.xo;
+    console.log(tile, index);
+    p = p == p1 ? p2 : p1; 
 }

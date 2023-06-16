@@ -6,7 +6,7 @@ export class Player {
         this._gender = gender; 
         this.placeHolder = document.getElementById(element);
         console.log(element);
-        this.xoro = xoro;
+        this.xo = xoro;
     }
 
     get gender() {
@@ -59,7 +59,7 @@ export class Player {
         displayPlayerCard.classList.add('card');
         
         displayPlayerCard.innerHTML = (`
-            <h3>Player ${this.xoro}</h3>
+            <h3>Player ${this.xo}</h3>
             <img id="${this.id}-pImage" class="card-img-top card-background" src="${this.gender}" alt="${this.name} avatar">
             <div class="card-body">
                 <h5 id="${this.id}-pTitle" class="card-title">${this.name}</h5>

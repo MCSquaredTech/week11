@@ -11,11 +11,11 @@ export class Card {
 
     display() {
         // console.log(this.title);
-        this.clear($(this.element))
+        $(this.element).empty();
         let p = new User(this.user, this.img, this.title);
         p.appendToElement($(this.element));
         
-        this.clear($('.crd-btn'));
+        $('.crd-btn').empty();
         let b = new Button('Change');
         b.appendToElement($('.crd-btn'));
         b.element.click(() => {
@@ -23,6 +23,7 @@ export class Card {
             $('#pInput').addClass('show');
         });
         let s = new Button('Save');
+        $('.save-btn').empty()
         s.appendToElement($('.save-btn'));
         s.element.click(() => { 
             p.user = $('#pFirstName').val();
@@ -32,12 +33,6 @@ export class Card {
             this.clear(this.element);
             this.display();
         });
-    }
-
-    clear(element) { 
-        while(element.firstChild) {
-            element.removeChild(element.firstChild);
-        }
     }
 
 }
