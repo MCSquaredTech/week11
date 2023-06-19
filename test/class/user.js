@@ -4,8 +4,9 @@
 import { BaseElement } from "./base-element.js";
 
 export class User extends BaseElement { 
-    constructor(name, gender, player){ 
+    constructor(id, name, gender, player){ 
         super();
+        this.id = id;
         this._name = name;
         this._gender = gender;
         this._player = player;
@@ -25,7 +26,6 @@ export class User extends BaseElement {
     }
 
     getElementString() { 
-        console.log(this.player)
        return  `
         <div class="card" style="width: 18rem;">
             <h3>${this.player}</h3>
